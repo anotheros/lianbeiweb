@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练呗 - 健身运动助手</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white py-4 flex justify-between items-center shadow-md sticky top-0 z-10 rounded-md">
+        <div class="logo text-xl font-bold ml-4">练呗</div>
+        <nav class="mr-4">
+            <ul class="flex space-x-4">
+                <li><a href="#features" class="hover:text-blue-200 no-underline">功能特点</a></li>
+                <li><a href="#usage" class="hover:text-blue-200 no-underline">使用说明</a></li>
+                <li><a href="#testimonials" class="hover:text-blue-200 no-underline">用户评价</a></li>
+                <li><a href="#download" class="hover:text-blue-200 no-underline">下载</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4">
+        <section class="text-center mb-12">
+            <h1 class="text-3xl font-bold text-gray-800">您的智能健身伙伴 - 练呗</h1>
+            <p class="text-lg text-gray-600 mt-2">记录饮食，设置训练计划，科学管理您的健身生活</p>
+            <a href="#download" class="bg-green-500 text-white py-3 px-6 rounded-full hover:bg-green-700 mt-4 inline-block no-underline">立即下载</a>
+        </section>
+
+        <section id="features" class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 text-center mb-6">功能特点</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4">饮食记录与分析</h3>
+                    <p class="text-gray-700 mb-4">
+                        -  记录每日饮食，包括碳水、蛋白质、脂肪等详细信息。<br>
+                        -  查询食物营养成分，提供膳食建议。
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4">训练计划定制</h3>
+                     <p class="text-gray-700 mb-4">
+                        -  设置个性化训练计划，包括训练周期、动作和强度。<br>
+                        -  提供训练计划模板，并可自定义修改。
+                     </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4">身体状态评估</h3>
+                    <p class="text-gray-700 mb-4">
+                        -  根据饮食和运动数据，评估身体状态，给出建议。<br>
+                        -  展示燃脂进度、今日状态、近期状态等信息。
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4">训练记录</h3>
+                    <p class="text-gray-700 mb-4">
+                       -  记录每日训练，包括训练项目、时长、消耗卡路里等。<br>
+                       -  查看近期运动记录和运动详情。
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4">数据统计与报告</h3>
+                    <p class="text-gray-700 mb-4">
+                        -  提供周报、月报、年报，统计饮食和运动数据。<br>
+                        -  直观展示您的健身成果。
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4">食物查询与推荐</h3>
+                    <p class="text-gray-700 mb-4">
+                       -  查询食物的详细营养信息，包括碳水、蛋白质、脂肪比例和等级。<br>
+                       -  提供食物评分和饮食建议，帮助您做出健康选择。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="usage" class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 text-center mb-6">使用说明</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li><strong>首页：</strong> 查看总状态、燃脂进度、今日状态、近期状态和近期运动。</li>
+                    <li><strong>记录：</strong> 记录总览、饮食记录、食物详情、食物菜单和当日训练。</li>
+                    <li><strong>饮食：</strong>
+                        <ul class="list-disc list-inside ml-5 space-y-1">
+                            <li>记录早、中、晚和加餐的饮食数据。</li>
+                            <li>查询食物详情，包括营养成分和评分。</li>
+                            <li>创建个人食物菜单，方便快速记录。</li>
+                        </ul>
+                    </li>
+                    <li><strong>训练：</strong>
+                        <ul class="list-disc list-inside ml-5 space-y-1">
+                            <li>查看今日身体和锻炼情况。</li>
+                            <li>记录训练计划和训练数据。</li>
+                            <li>设置训练计划周期和具体内容。</li>
+                        </ul>
+                    </li>
+                    <li><strong>计划设置：</strong> 设置饮食计划和训练计划，包括计划周期、饮食比例和训练动作。</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="testimonials" class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 text-center mb-6">用户评价</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <p class="text-gray-700 mb-4">"练呗帮助我更好地管理饮食和训练，效果显著！"</p>
+                    <p class="text-gray-600 font-medium">-  李先生，健身爱好者</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <p class="text-gray-700 mb-4">"软件功能全面，使用方便，是健身的好帮手。"</p>
+                    <p class="text-gray-600 font-medium">-  张女士，瑜伽教练</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="text-center">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">立即下载练呗App</h2>
+            <p class="text-gray-600 mb-4">
+                扫描下方二维码，下载App，开始您的健康生活！
+            </p>
+            <img src="" alt="下载二维码" class="mx-auto rounded-md shadow-md">
+             <p class="text-gray-600 mt-4">
+                支持 iOS 和 Android
+            </p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-200 text-gray-600 py-4 text-center mt-8 rounded-md">
+        <p>© 2025 北京负熵科技有限公司 版权所有</p>
+    
+        <div>
+            <a href="https://beian.miit.gov.cn/" target="_blank"><!--v-if--><span >京ICP备2023029905号-4 </span><!--v-if--></a>
+        </div>
+        <div >
+            <a  href="https://beian.miit.gov.cn/" target="_blank"><!--v-if--><span >增值电信业务经营许可证编号：京B2-20240481</span><!--v-if--></a>
+        </div>
+        <div >
+            <a  href="https://katagoai.com/userTerm.html" target="_blank"><span class="el-link__inner">用户协议</span><!--v-if--></a>
+            <a  href="https://katagoai.com/privacy.html" target="_blank"><!--v-if--><span >隐私政策</span><!--v-if--></a></div>
+    </footer>
+</body>
+</html>
