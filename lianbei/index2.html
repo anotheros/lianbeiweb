@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练呗 - 您的智能健身伙伴</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/Lucide.css">
+    <style>
+      /* 使用 Lucide 图标字体 */
+      .lucide {
+        font-family: 'LucideIcons';
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* 定义一些基础样式和自定义颜色 */
+      body {
+        font-family: 'Inter', sans-serif; /* 使用 Inter 字体 */
+      }
+      /* AstroWind 风格的渐变色 */
+      .bg-gradient-primary {
+        background-image: linear-gradient(to right, #3b82f6, #8b5cf6); /* 示例渐变色 */
+      }
+      .text-primary {
+        color: #3b82f6; /* 示例主色 */
+      }
+      .text-secondary {
+        color: #6b7280; /* 示例次要文本色 */
+      }
+      .btn-primary {
+        @apply inline-block px-6 py-3 text-base font-medium text-center text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out;
+      }
+       .btn-secondary {
+        @apply inline-block px-6 py-3 text-base font-medium text-center text-blue-600 bg-white border border-blue-600 rounded-lg shadow-sm hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out;
+      }
+      /* 确保图标垂直居中 */
+       .feature-icon {
+         @apply w-12 h-12 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-600 mb-4 text-2xl;
+       }
+    </style>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 lg:px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary">练呗</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#features" class="text-gray-600 hover:text-primary transition duration-150">核心功能</a>
+                <a href="#how-it-works" class="text-gray-600 hover:text-primary transition duration-150">工作原理</a>
+                <a href="#download" class="btn-primary">立即下载</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i class="lucide lucide-menu text-2xl text-gray-600"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="bg-gradient-primary text-white pt-20 pb-24 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                练呗 - 您的智能健身与营养管家
+            </h1>
+            <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                精准记录饮食与训练，科学评估身体状态，智能生成个性化建议，助您高效达成健身目标。
+            </p>
+            <div class="space-x-4">
+                <a href="#download" class="btn-primary bg-white text-blue-600 hover:bg-gray-100">
+                    <i class="lucide lucide-download mr-2 align-middle"></i>立即下载
+                </a>
+                 <a href="#features" class="btn-secondary bg-transparent text-white border-white hover:bg-white hover:text-blue-600">
+                    <i class="lucide lucide-info mr-2 align-middle"></i>了解更多
+                </a>
+            </div>
+            <div class="mt-12">
+                 <img src="./imgs/训练.jpg" width="50%" alt="练呗App界面截图" class="mx-auto rounded-lg shadow-xl" >          
+                </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-16 lg:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">核心功能</h2>
+                <p class="text-lg text-secondary max-w-2xl mx-auto">
+                    全面记录、智能分析、科学指导，健身从未如此简单。
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="feature-icon">
+                        <i class="lucide lucide-utensils-crossed"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">精准饮食记录</h3>
+                    <p class="text-secondary">
+                        便捷查询食物营养（碳水、蛋白、脂肪），智能评分与建议，支持自定义菜单，轻松记录每一餐。
+                    </p>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="feature-icon">
+                        <i class="lucide lucide-dumbbell"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">科学训练计划</h3>
+                    <p class="text-secondary">
+                        设定周期性训练计划，按计划执行并记录训练详情（有氧、无氧、燃脂），追踪运动表现。
+                    </p>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="feature-icon">
+                        <i class="lucide lucide-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">全面状态评估</h3>
+                    <p class="text-secondary">
+                        整合饮食、运动、心率、睡眠等多维度数据，评估身体状态、压力水平、恢复程度，提供实时反馈。
+                    </p>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="feature-icon">
+                        <i class="lucide lucide-brain-circuit"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">智能AI建议</h3>
+                    <p class="text-secondary">
+                        根据您的数据和目标，AI提供个性化的饮食调整、训练优化、燃脂进度分析等专业建议。
+                    </p>
+                </div>
+                 <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="feature-icon">
+                        <i class="lucide lucide-trending-up"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">进度追踪与报告</h3>
+                    <p class="text-secondary">
+                        可视化图表展示近期状态（心率、体重、有氧适能等）和运动趋势，生成周/月/年报，回顾成果。
+                    </p>
+                </div>
+                 <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="feature-icon">
+                        <i class="lucide lucide-calendar-days"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">灵活计划设置</h3>
+                    <p class="text-secondary">
+                        支持按克数、卡路里比例、体重比例等多种方式设置饮食计划，满足不同健身阶段的需求。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="py-16 lg:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+             <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">练呗如何助您成功？</h2>
+                <p class="text-lg text-secondary max-w-2xl mx-auto">
+                    简单三步，开启您的智能健身体验。
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8 lg:gap-16">
+                <div class="text-center max-w-xs">
+                    <div class="feature-icon mx-auto">
+                        <span class="font-bold text-2xl">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">记录与设定</h3>
+                    <p class="text-secondary">
+                        轻松记录每日饮食与运动，设定您的健身目标和周期计划。
+                    </p>
+                </div>
+                 <div class="hidden md:block text-gray-400 text-4xl">
+                    <i class="lucide lucide-arrow-right"></i>
+                 </div>
+                 <div class="md:hidden text-gray-400 text-4xl transform rotate-90 my-4">
+                     <i class="lucide lucide-arrow-down"></i>
+                 </div>
+                <div class="text-center max-w-xs">
+                    <div class="feature-icon mx-auto">
+                         <span class="font-bold text-2xl">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">智能分析</h3>
+                    <p class="text-secondary">
+                        App自动分析您的数据，评估身体状态、卡路里平衡、恢复情况。
+                    </p>
+                </div>
+                 <div class="hidden md:block text-gray-400 text-4xl">
+                    <i class="lucide lucide-arrow-right"></i>
+                 </div>
+                  <div class="md:hidden text-gray-400 text-4xl transform rotate-90 my-4">
+                     <i class="lucide lucide-arrow-down"></i>
+                 </div>
+                <div class="text-center max-w-xs">
+                    <div class="feature-icon mx-auto">
+                         <span class="font-bold text-2xl">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">获取指导</h3>
+                    <p class="text-secondary">
+                        接收个性化AI建议和清晰的进度报告，不断优化您的健身方案。
+                    </p>
+                </div>
+            </div>
+             <div class="mt-16 text-center">
+                 <img src="./imgs/ai建议.jpg" width="30%" alt="数据分析与建议示例" class="mx-auto rounded-lg shadow-lg border" onerror="this.src='https://placehold.co/700x400/ffffff/6b7280?text=Data+Analysis+Placeholder'; this.onerror=null;">
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="download" class="py-16 lg:py-24 bg-gradient-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">准备好开始改变了吗？</h2>
+            <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                立即下载练呗App，让科技赋能您的健康生活，开启高效健身之旅！
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#" class="inline-block bg-white text-gray-800 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-150 w-full sm:w-auto">
+                    <!-- <img src="./imgs/appstore.svg" alt="[从 App Store 下载]" class="inline-block h-8 mr-2" >
+                    -->
+                    App Store
+                </a>
+                 <a href="#" class="inline-block bg-white text-gray-800 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-150 w-full sm:w-auto">
+                     <!-- <img src="./imgs/googleplay.svg" alt="[在 Google Play 获取]" class="inline-block h-8 mr-2">
+                   -->
+                      Google Play 
+                </a>
+                <a href="#" class="inline-block bg-white text-gray-800 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-150 w-full sm:w-auto">
+                    <!-- <img src="https://placehold.co/150x50/ffffff/3b82f6?text=next" alt="[在 鸿蒙next 获取]" class="inline-block h-8 mr-2" >
+                     -->
+                     鸿蒙next
+               </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 北京负熵科技有限公司. 保留所有权利。</p>
+            <div class="mt-4 space-x-4">
+                本站备案号：<a href="https://beian.miit.gov.cn/"  class="hover:text-white transition duration-150" target="_blank">京ICP备2023029905号-4</a>
+                <a  href="https://beian.miit.gov.cn/"  class="hover:text-white transition duration-150" target="_blank"><!--v-if--><span >增值电信业务经营许可证编号：京B2-20240481</span><!--v-if--></a>
+            </div>
+            <div >
+                <a  href="https://lianbei.jianshenji.com/userTerm.html" target="_blank"><span class="el-link__inner">用户协议</span><!--v-if--></a>
+                <a  href="https://lianbei.jianshenji.com/privacy.html" target="_blank"><!--v-if--><span >隐私政策</span><!--v-if--></a></div>
+                <a  href="https://lianbei.jianshenji.com/vipcontract.html" target="_blank"><!--v-if--><span >付费协议</span><!--v-if--></a></div>
+       
+                </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.querySelector('header button');
+        const mobileMenu = document.querySelector('header .hidden.md\\:flex'); // Select the desktop menu for simplicity
+
+        if (menuButton && mobileMenu) {
+            menuButton.addEventListener('click', () => {
+                // Basic toggle example - replace with a proper mobile menu implementation
+                mobileMenu.classList.toggle('hidden');
+                 mobileMenu.classList.toggle('flex'); // Add flex for display
+                 mobileMenu.classList.toggle('flex-col'); // Stack items vertically
+                 mobileMenu.classList.toggle('absolute'); // Position it
+                 mobileMenu.classList.toggle('top-16'); // Below header
+                 mobileMenu.classList.toggle('left-0');
+                 mobileMenu.classList.toggle('right-0');
+                 mobileMenu.classList.toggle('bg-white'); // Background
+                 mobileMenu.classList.toggle('p-4'); // Padding
+                 mobileMenu.classList.toggle('shadow-lg'); // Shadow
+            });
+        }
+    </script>
+
+</body>
+</html>
