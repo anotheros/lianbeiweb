@@ -43,85 +43,115 @@
         }
       }
 
-      /* 将 @apply 规则移到 Tailwind 配置之外或使用插件 */
-      /* 注意：纯 CDN 可能不支持 @apply，这里仅作演示，实际项目中建议使用构建工具 */
+      /* 按钮样式 (手动展开) */
       .btn-primary {
-         /* @apply 规则可能在纯CDN下不工作，手动展开 */
-         display: inline-block;
-         padding-left: 1.5rem; /* px-6 */
-         padding-right: 1.5rem; /* px-6 */
-         padding-top: 0.75rem; /* py-3 */
-         padding-bottom: 0.75rem; /* py-3 */
-         font-size: 1rem; /* text-base */
-         font-weight: 500; /* font-medium */
-         text-align: center;
-         color: white;
-         background-color: #2563eb; /* bg-blue-600 */
-         border-radius: 0.5rem; /* rounded-lg */
-         box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* shadow-md */
-         transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-         transition-duration: 150ms;
+         display: inline-block; padding-left: 1.5rem; padding-right: 1.5rem; padding-top: 0.75rem; padding-bottom: 0.75rem; font-size: 1rem; font-weight: 500; text-align: center; color: white; background-color: #2563eb; border-radius: 0.5rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms;
       }
-      .btn-primary:hover {
-         background-color: #1d4ed8; /* hover:bg-blue-700 */
-      }
-      .btn-primary:focus {
-         outline: 2px solid transparent;
-         outline-offset: 2px;
-         --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-         --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-         box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-         --tw-ring-color: #3b82f6; /* focus:ring-blue-500 */
-         --tw-ring-offset-width: 2px;
-      }
+      .btn-primary:hover { background-color: #1d4ed8; }
+      .btn-primary:focus { outline: 2px solid transparent; outline-offset: 2px; --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color); --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color); box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000); --tw-ring-color: #3b82f6; --tw-ring-offset-width: 2px; }
 
        .btn-secondary {
-         /* @apply 规则可能在纯CDN下不工作，手动展开 */
-         display: inline-block;
-         padding-left: 1.5rem; /* px-6 */
-         padding-right: 1.5rem; /* px-6 */
-         padding-top: 0.75rem; /* py-3 */
-         padding-bottom: 0.75rem; /* py-3 */
-         font-size: 1rem; /* text-base */
-         font-weight: 500; /* font-medium */
-         text-align: center;
-         color: #2563eb; /* text-blue-600 */
-         background-color: white;
-         border: 1px solid #2563eb; /* border border-blue-600 */
-         border-radius: 0.5rem; /* rounded-lg */
-         box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); /* shadow-sm */
-         transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-         transition-duration: 150ms;
+         display: inline-block; padding-left: 1.5rem; padding-right: 1.5rem; padding-top: 0.75rem; padding-bottom: 0.75rem; font-size: 1rem; font-weight: 500; text-align: center; color: #2563eb; background-color: white; border: 1px solid #2563eb; border-radius: 0.5rem; box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms;
        }
-       .btn-secondary:hover {
-          background-color: #eff6ff; /* hover:bg-blue-50 */
-       }
-       .btn-secondary:focus {
-          outline: 2px solid transparent;
-          outline-offset: 2px;
-          --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-          --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-          box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-          --tw-ring-color: #3b82f6; /* focus:ring-blue-500 */
-          --tw-ring-offset-width: 2px;
-       }
+       .btn-secondary:hover { background-color: #eff6ff; }
+       .btn-secondary:focus { outline: 2px solid transparent; outline-offset: 2px; --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color); --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color); box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000); --tw-ring-color: #3b82f6; --tw-ring-offset-width: 2px; }
 
-      /* 确保图标垂直居中 */
+      /* 图标样式 (手动展开) */
        .feature-icon {
-         /* @apply 规则可能在纯CDN下不工作，手动展开 */
-         width: 3rem; /* w-12 */
-         height: 3rem; /* h-12 */
-         display: inline-flex;
-         align-items: center;
-         justify-content: center;
-         border-radius: 9999px; /* rounded-full */
-         background-color: #dbeafe; /* bg-blue-100 */
-         color: #2563eb; /* text-blue-600 */
-         margin-bottom: 1rem; /* mb-4 */
-         font-size: 1.5rem; /* text-2xl */
+         width: 3rem; height: 3rem; display: inline-flex; align-items: center; justify-content: center; border-radius: 9999px; background-color: #dbeafe; color: #2563eb; margin-bottom: 1rem; font-size: 1.5rem;
        }
+       /* Section间隔 */
+       section {
+           padding-top: 4rem; /* py-16 */
+           padding-bottom: 4rem; /* py-16 */
+       }
+       @media (min-width: 1024px) { /* lg breakpoint */
+           section {
+               padding-top: 6rem; /* lg:py-24 */
+               padding-bottom: 6rem; /* lg:py-24 */
+           }
+       }
+       /* 标题通用样式 */
+       .section-title {
+           font-size: 1.875rem; /* text-3xl */
+           line-height: 2.25rem;
+           font-weight: 700; /* font-bold */
+           color: #111827; /* text-gray-900 */
+           margin-bottom: 0.75rem; /* mb-3 */
+       }
+       @media (min-width: 768px) { /* md breakpoint */
+            .section-title {
+                font-size: 2.25rem; /* md:text-4xl */
+                line-height: 2.5rem;
+            }
+       }
+       .section-subtitle {
+           font-size: 1.125rem; /* text-lg */
+           line-height: 1.75rem;
+           color: #6b7280; /* text-secondary */
+           max-width: 42rem; /* max-w-2xl */
+           margin-left: auto;
+           margin-right: auto;
+       }
+       /* Testimonial Slider Styles */
+       .testimonial-slider-container {
+           position: relative; /* Needed for absolute positioning of buttons */
+       }
+       .testimonial-slider {
+           display: flex;
+           overflow-x: hidden; /* Hide scrollbar, JS will handle scroll */
+           scroll-snap-type: x mandatory; /* Optional: Snap scrolling */
+           scroll-behavior: smooth; /* Smooth scroll via JS */
+           -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+       }
+       .testimonial-card {
+           flex: 0 0 100%; /* Each card takes full width */
+           scroll-snap-align: start; /* Snap to start of card */
+           box-sizing: border-box; /* Include padding in width calculation */
+       }
+       /* Style for navigation buttons */
+       .slider-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #3b82f6;
+            border: 1px solid #d1d5db;
+            border-radius: 9999px; /* rounded-full */
+            width: 2.5rem; /* w-10 */
+            height: 2.5rem; /* h-10 */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            z-index: 10; /* Ensure buttons are above cards */
+       }
+       .slider-button:hover {
+           background-color: rgba(255, 255, 255, 0.9);
+       }
+       .slider-button:disabled {
+           opacity: 0.5;
+           cursor: not-allowed;
+       }
+       .slider-button.prev {
+           left: 0.5rem; /* Adjust as needed */
+       }
+       .slider-button.next {
+           right: 0.5rem; /* Adjust as needed */
+       }
+       @media (min-width: 768px) { /* Hide buttons on larger screens if showing multiple cards */
+            /* .slider-button { display: none; } */ /* Example: Uncomment if needed */
+             .testimonial-card {
+                /* flex: 0 0 50%; */ /* Example: Show 2 cards on medium screens */
+             }
+       }
+        @media (min-width: 1024px) {
+             .testimonial-card {
+                /* flex: 0 0 33.3333%; */ /* Example: Show 3 cards on large screens */
+             }
+        }
+
     </style>
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -134,9 +164,10 @@
             <a href="#" class="text-2xl font-bold text-primary">练呗</a>
             <div id="desktop-menu" class="hidden md:flex space-x-6 items-center">
                 <a href="#features" class="text-gray-600 hover:text-primary transition duration-150">核心功能</a>
-                <a href="#outdoor-features" class="text-gray-600 hover:text-primary transition duration-150">户外探索</a>
-                <a href="#how-it-works" class="text-gray-600 hover:text-primary transition duration-150">工作原理</a>
-                <a href="#download" class="btn-primary">立即下载</a>
+                <a href="#benefits" class="text-gray-600 hover:text-primary transition duration-150">主要优势</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-primary transition duration-150">用户评价</a>
+                <a href="#faq" class="text-gray-600 hover:text-primary transition duration-150">常见问题</a>
+                <a href="#download-final" class="btn-primary">立即下载</a>
             </div>
             <button id="mobile-menu-button" class="md:hidden focus:outline-none">
                 <i class="lucide lucide-menu text-2xl text-gray-600"></i>
@@ -144,13 +175,14 @@
         </nav>
         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute top-full left-0 right-0 z-40">
              <a href="#features" class="block px-4 py-3 text-gray-600 hover:bg-gray-100 hover:text-primary transition duration-150">核心功能</a>
-             <a href="#outdoor-features" class="block px-4 py-3 text-gray-600 hover:bg-gray-100 hover:text-primary transition duration-150">户外探索</a>
-             <a href="#how-it-works" class="block px-4 py-3 text-gray-600 hover:bg-gray-100 hover:text-primary transition duration-150">工作原理</a>
-             <a href="#download" class="block px-4 py-3 text-gray-600 hover:bg-gray-100 hover:text-primary transition duration-150">立即下载</a>
+             <a href="#benefits" class="block px-4 py-3 text-gray-600 hover:bg-gray-100 hover:text-primary transition duration-150">主要优势</a>
+             <a href="#testimonials" class="block px-4 py-3 text-gray-600 hover:bg-gray-100 hover:text-primary transition duration-150">用户评价</a>
+             <a href="#faq" class="block px-4 py-3 text-gray-600 hover:bg-gray-100 hover:text-primary transition duration-150">常见问题</a>
+             <a href="#download-final" class="block px-4 py-3 text-gray-600 hover:bg-gray-100 hover:text-primary transition duration-150">立即下载</a>
         </div>
     </header>
 
-    <section class="bg-gradient-primary text-white pt-20 pb-24 text-center">
+    <section class="bg-gradient-primary text-white text-center pt-20 pb-16 md:pt-24 md:pb-20">
         <div class="container mx-auto px-4">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
                 练呗 - 智能健身 & 户外探索伙伴
@@ -159,217 +191,231 @@
                 精准记录饮食训练，科学评估身体状态，更支持户外路线记录与规划，助您全方位达成目标。
             </p>
             <div class="space-x-4">
-                <a href="#download" class="btn-primary bg-white text-blue-600 hover:bg-gray-100">
-                    <i class="lucide lucide-download mr-2 align-middle"></i>立即下载
+                <a href="#download-final" class="btn-primary bg-white text-blue-600 hover:bg-gray-100">
+                    <i class="lucide lucide-download mr-2 align-middle"></i>立即下载App
                 </a>
                  <a href="#features" class="btn-secondary bg-transparent text-white border-white hover:bg-white hover:text-blue-600">
-                    <i class="lucide lucide-info mr-2 align-middle"></i>了解更多
+                    <i class="lucide lucide-arrow-down-circle mr-2 align-middle"></i>查看功能详情
                 </a>
             </div>
             <div class="mt-12">
-                 <img src="./imgs/训练.jpg" width="50%" alt="练呗App界面截图" class="mx-auto rounded-lg shadow-xl" >          
-                </div>
+                 <img src="./imgs/训练.jpg" width="50%" alt="[练呗App界面截图]" class="mx-auto rounded-lg shadow-xl" onerror="this.src='https://placehold.co/800x450/e2e8f0/3b82f6?text=App+Screenshot+Placeholder'; this.onerror=null;">
+            </div>
         </div>
     </section>
 
-    <section id="features" class="py-16 lg:py-24 bg-white">
+    <section id="benefits" class="bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">核心健身功能</h2>
-                <p class="text-lg text-secondary max-w-2xl mx-auto">
-                    全面记录、智能分析、科学指导，室内健身从未如此简单。
+                <h2 class="section-title">使用练呗，您将获得</h2>
+                <p class="section-subtitle">
+                    无论是减脂塑形，还是探索山野，练呗都能为您提供科学支持。
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-4">
+                    <div class="feature-icon mx-auto bg-green-100 text-green-600"> <i class="lucide lucide-target"></i> </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">清晰的目标管理</h3>
+                    <p class="text-secondary">设定并追踪您的健身与户外目标，量化每一步进展。</p>
+                </div>
+                <div class="p-4">
+                    <div class="feature-icon mx-auto bg-yellow-100 text-yellow-600"> <i class="lucide lucide-bar-chart-3"></i> </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">全面的数据洞察</h3>
+                    <p class="text-secondary">深入了解您的饮食、训练、身体状态和户外表现。</p>
+                </div>
+                <div class="p-4">
+                    <div class="feature-icon mx-auto bg-purple-100 text-purple-600"> <i class="lucide lucide-sparkles"></i> </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">个性化的智能指导</h3>
+                    <p class="text-secondary">获取基于您数据的AI建议，优化计划，提升效率。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="for-who" class="bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-title">练呗适合哪些用户？</h2>
+                <p class="section-subtitle">
+                    如果您是以下人群，练呗将是您的理想选择。
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="p-6 bg-white rounded-lg shadow-sm"> <i class="lucide lucide-weight text-4xl text-primary mb-3 inline-block"></i> <h4 class="font-semibold text-lg mb-1">健身爱好者</h4> <p class="text-sm text-secondary">希望系统记录饮食训练，科学管理身材的人。</p> </div>
+                 <div class="p-6 bg-white rounded-lg shadow-sm"> <i class="lucide lucide-mountain text-4xl text-primary mb-3 inline-block"></i> <h4 class="font-semibold text-lg mb-1">户外徒步者</h4> <p class="text-sm text-secondary">喜欢探索山野，记录分享路线，挑战自我的人。</p> </div>
+                 <div class="p-6 bg-white rounded-lg shadow-sm"> <i class="lucide lucide-bike text-4xl text-primary mb-3 inline-block"></i> <h4 class="font-semibold text-lg mb-1">骑行爱好者</h4> <p class="text-sm text-secondary">需要记录骑行轨迹、海拔、功率等数据的人。</p> </div>
+                 <div class="p-6 bg-white rounded-lg shadow-sm"> <i class="lucide lucide-activity text-4xl text-primary mb-3 inline-block"></i> <h4 class="font-semibold text-lg mb-1">数据控跑者</h4> <p class="text-sm text-secondary">关注跑步数据，希望通过分析提升表现的人。</p> </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-title">您会喜欢的核心功能</h2>
+                <p class="section-subtitle">
+                    我们整合了强大的健身管理与户外探索工具。
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <div class="feature-icon">
-                        <i class="lucide lucide-utensils-crossed"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">精准饮食记录</h3>
-                    <p class="text-secondary">
-                        便捷查询食物营养，智能评分与建议，支持自定义菜单，轻松记录每一餐。
-                    </p>
-                </div>
-                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <div class="feature-icon">
-                        <i class="lucide lucide-dumbbell"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">科学训练计划</h3>
-                    <p class="text-secondary">
-                        设定周期性训练计划，按计划执行并记录训练详情，追踪运动表现。
-                    </p>
-                </div>
-                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <div class="feature-icon">
-                        <i class="lucide lucide-heart-pulse"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">全面状态评估</h3>
-                    <p class="text-secondary">
-                        整合多维度数据，评估身体状态、压力、恢复程度，提供实时反馈。
-                    </p>
-                </div>
-                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <div class="feature-icon">
-                        <i class="lucide lucide-brain-circuit"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">智能AI建议</h3>
-                    <p class="text-secondary">
-                        AI提供个性化的饮食调整、训练优化、燃脂进度分析等专业建议。
-                    </p>
-                </div>
-                 <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <div class="feature-icon">
-                        <i class="lucide lucide-trending-up"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">进度追踪与报告</h3>
-                    <p class="text-secondary">
-                        可视化图表展示近期状态与趋势，生成周/月/年报，回顾成果。
-                    </p>
-                </div>
-                 <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <div class="feature-icon">
-                        <i class="lucide lucide-calendar-days"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">灵活计划设置</h3>
-                    <p class="text-secondary">
-                        支持多种方式设置饮食计划，满足不同健身阶段的需求。
-                    </p>
-                </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex items-start space-x-4"> <div class="feature-icon flex-shrink-0 mt-1 w-10 h-10 text-xl"> <i class="lucide lucide-utensils-crossed"></i> </div> <div> <h3 class="text-lg font-semibold text-gray-900 mb-1">精准饮食记录</h3> <p class="text-secondary text-sm">便捷查询食物营养，智能评分与建议，自定义菜单。</p> </div> </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex items-start space-x-4"> <div class="feature-icon flex-shrink-0 mt-1 w-10 h-10 text-xl"> <i class="lucide lucide-dumbbell"></i> </div> <div> <h3 class="text-lg font-semibold text-gray-900 mb-1">科学训练计划</h3> <p class="text-secondary text-sm">设定周期训练，记录训练详情，追踪运动表现。</p> </div> </div>
+                 <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex items-start space-x-4"> <div class="feature-icon flex-shrink-0 mt-1 w-10 h-10 text-xl"> <i class="lucide lucide-heart-pulse"></i> </div> <div> <h3 class="text-lg font-semibold text-gray-900 mb-1">全面状态评估</h3> <p class="text-secondary text-sm">整合多维数据，评估身体状态、压力、恢复度。</p> </div> </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex items-start space-x-4"> <div class="feature-icon flex-shrink-0 mt-1 w-10 h-10 text-xl"> <i class="lucide lucide-map-pin"></i> </div> <div> <h3 class="text-lg font-semibold text-gray-900 mb-1">精准轨迹记录</h3> <p class="text-secondary text-sm">记录户外活动经纬度、海拔，生成详细路线图。</p> </div> </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex items-start space-x-4"> <div class="feature-icon flex-shrink-0 mt-1 w-10 h-10 text-xl"> <i class="lucide lucide-route"></i> </div> <div> <h3 class="text-lg font-semibold text-gray-900 mb-1">智能路线规划</h3> <p class="text-secondary text-sm">规划A到B独特路线，可选野路，融合他人轨迹。</p> </div> </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex items-start space-x-4"> <div class="feature-icon flex-shrink-0 mt-1 w-10 h-10 text-xl"> <i class="lucide lucide-gauge"></i> </div> <div> <h3 class="text-lg font-semibold text-gray-900 mb-1">体能匹配规划</h3> <p class="text-secondary text-sm">结合手表数据规划路线，或完成后评估表现。</p> </div> </div>
+                 <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex items-start space-x-4"> <div class="feature-icon flex-shrink-0 mt-1 w-10 h-10 text-xl"> <i class="lucide lucide-brain-circuit"></i> </div> <div> <h3 class="text-lg font-semibold text-gray-900 mb-1">智能AI建议</h3> <p class="text-secondary text-sm">个性化饮食、训练、燃脂分析等专业建议。</p> </div> </div>
+                 <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex items-start space-x-4"> <div class="feature-icon flex-shrink-0 mt-1 w-10 h-10 text-xl"> <i class="lucide lucide-library"></i> </div> <div> <h3 class="text-lg font-semibold text-gray-900 mb-1">路线库与分享</h3> <p class="text-secondary text-sm">积累分享路线，探索野山小径，发现不寻常的路。</p> </div> </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex items-start space-x-4"> <div class="feature-icon flex-shrink-0 mt-1 w-10 h-10 text-xl"> <i class="lucide lucide-camera"></i> </div> <div> <h3 class="text-lg font-semibold text-gray-900 mb-1">沿途信息标记</h3> <p class="text-secondary text-sm">标记查看风景点、补给点、厕所等实用信息。</p> </div> </div>
             </div>
         </div>
     </section>
 
-    <section id="outdoor-features" class="py-16 lg:py-24 bg-gray-50">
+    <section id="testimonials" class="bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">户外探索新体验</h2>
-                <p class="text-lg text-secondary max-w-2xl mx-auto">
-                    记录您的每一次户外探险，发现与规划独一无二的路线。
+                <h2 class="section-title">听听用户怎么说</h2>
+                <p class="section-subtitle">
+                    真实的反馈是我们前进的动力。
                 </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <div class="feature-icon">
-                        <i class="lucide lucide-map-pin"></i>
+
+            <div class="testimonial-slider-container max-w-3xl mx-auto">
+                <div id="testimonialSlider" class="testimonial-slider">
+                    <div class="testimonial-card p-4 md:p-8">
+                        <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                            <i class="lucide lucide-quote text-4xl text-gray-300 mb-4 inline-block"></i>
+                            <p class="text-lg text-gray-700 italic mb-6">
+                                “练呗的数据记录非常详细，特别是跑步功率和心率区间分析，帮我更科学地训练，PB了好几次！”
+                            </p>
+                            <div class="flex items-center justify-center">
+                                <img src="https://placehold.co/60x60/e0e0e0/757575?text=头像1" alt="[用户头像]" class="w-12 h-12 rounded-full mr-4" onerror="this.src='https://placehold.co/60x60/e0e0e0/757575?text=头像'; this.onerror=null;">
+                                <div>
+                                    <p class="font-semibold text-gray-900">李明 - 严肃跑者</p>
+                                    <p class="text-sm text-secondary">已使用 1 年</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">精准轨迹记录</h3>
-                    <p class="text-secondary">
-                        支持徒步、跑步、骑行、登山等活动，精确记录经纬度与海拔，生成详细路线图。
-                    </p>
-                </div>
-                <div class="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <div class="feature-icon">
-                        <i class="lucide lucide-library"></i>
+
+                    <div class="testimonial-card p-4 md:p-8">
+                         <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                            <i class="lucide lucide-quote text-4xl text-gray-300 mb-4 inline-block"></i>
+                            <p class="text-lg text-gray-700 italic mb-6">
+                                “自从用了练呗，我的户外徒步记录清晰多了，还能发现别人走过的好路线，GPS很准，规划野路的功能太赞了！”
+                            </p>
+                            <div class="flex items-center justify-center">
+                                <img src="https://placehold.co/60x60/d1fae5/10b981?text=头像2" alt="[用户头像]" class="w-12 h-12 rounded-full mr-4" onerror="this.src='https://placehold.co/60x60/d1fae5/10b981?text=头像'; this.onerror=null;">
+                                <div>
+                                    <p class="font-semibold text-gray-900">王芳 - 户外爱好者</p>
+                                    <p class="text-sm text-secondary">已使用 8 个月</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">海量路线库</h3>
-                    <p class="text-secondary">
-                        积累并分享您和他人的路线，探索野山小径、骑行秘境，发现不寻常的路。
-                    </p>
-                </div>
-                <div class="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <div class="feature-icon">
-                        <i class="lucide lucide-route"></i>
+
+                    <div class="testimonial-card p-4 md:p-8">
+                         <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                             <i class="lucide lucide-quote text-4xl text-gray-300 mb-4 inline-block"></i>
+                            <p class="text-lg text-gray-700 italic mb-6">
+                                “健身房训练记录很方便，动作库也全。看着自己的力量和围度数据一点点进步，非常有成就感！”
+                            </p>
+                            <div class="flex items-center justify-center">
+                                <img src="https://placehold.co/60x60/ffe4e6/f43f5e?text=头像3" alt="[用户头像]" class="w-12 h-12 rounded-full mr-4" onerror="this.src='https://placehold.co/60x60/ffe4e6/f43f5e?text=头像'; this.onerror=null;">
+                                <div>
+                                    <p class="font-semibold text-gray-900">赵刚 - 健身达人</p>
+                                    <p class="text-sm text-secondary">已使用 1.5 年</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">智能路线规划</h3>
-                    <p class="text-secondary">
-                        选择A到B点，规划独特路线（可选无台阶、野路），融合他人轨迹，创造您的专属行程。
-                    </p>
-                </div>
-                <div class="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <div class="feature-icon">
-                        <i class="lucide lucide-camera"></i>
+
+                     <div class="testimonial-card p-4 md:p-8">
+                         <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                            <i class="lucide lucide-quote text-4xl text-gray-300 mb-4 inline-block"></i>
+                            <p class="text-lg text-gray-700 italic mb-6">
+                                “减脂期严格控制饮食，练呗的食物库和碳蛋脂比例计算帮了大忙！AI建议也很实用，成功减掉了10公斤。”
+                            </p>
+                            <div class="flex items-center justify-center">
+                                <img src="https://placehold.co/60x60/ffedd5/f97316?text=头像4" alt="[用户头像]" class="w-12 h-12 rounded-full mr-4" onerror="this.src='https://placehold.co/60x60/ffedd5/f97316?text=头像'; this.onerror=null;">
+                                <div>
+                                    <p class="font-semibold text-gray-900">孙女士 - 减脂成功者</p>
+                                    <p class="text-sm text-secondary">已使用 5 个月</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">沿途信息标记</h3>
-                    <p class="text-secondary">
-                        标记和查看路线上的风景点、拍照点、补给点、厕所等实用信息，让探索更安心。
-                    </p>
                 </div>
-                 <div class="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <div class="feature-icon">
-                        <i class="lucide lucide-gauge"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">体能匹配规划</h3>
-                    <p class="text-secondary">
-                        结合运动手表数据（体力、功率），规划符合您当前能力的路线，或在完成后评估您的表现。
-                    </p>
-                </div>
-                 <div class="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <div class="feature-icon">
-                        <i class="lucide lucide-users"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">路线社区分享</h3>
-                    <p class="text-secondary">
-                        分享您的精彩路线，发现其他用户的宝藏路线，共同构建丰富的户外路线网络。
-                    </p>
-                </div>
+
+                <button id="prevButton" class="slider-button prev" aria-label="Previous testimonial">
+                    <i class="lucide lucide-chevron-left"></i>
+                </button>
+                <button id="nextButton" class="slider-button next" aria-label="Next testimonial">
+                    <i class="lucide lucide-chevron-right"></i>
+                </button>
             </div>
-             <!-- <div class="mt-16 text-center">
-                 <img src="https://placehold.co/700x400/ffffff/6b7280?text=户外路线规划与记录示例" alt="[户外路线规划与记录示例]" class="mx-auto rounded-lg shadow-lg border" onerror="this.src='https://placehold.co/700x400/ffffff/6b7280?text=Outdoor+Route+Placeholder'; this.onerror=null;">
-            </div> -->
+             <p class="mt-8 text-sm text-center text-secondary">(滑动或点击箭头切换评价)</p>
         </div>
     </section>
 
-    <section id="how-it-works" class="py-16 lg:py-24 bg-white">
+    <section id="integrations" class="bg-white">
+        <div class="container mx-auto px-4 text-center">
+             <h3 class="text-2xl font-semibold text-gray-800 mb-4">兼容主流运动设备</h3>
+             <p class="text-secondary mb-6 max-w-xl mx-auto">
+                 练呗支持与佳明 (Garmin) 等主流运动手表和设备同步数据，获取更全面的运动分析。（更多兼容性持续开发中）
+             </p>
+             <div class="flex justify-center items-center space-x-8">
+                 <img src="https://placehold.co/100x50/cccccc/999999?text=Garmin+Logo" alt="[佳明 Logo]" class="h-8 md:h-10 opacity-70" onerror="this.src='https://placehold.co/100x50/cccccc/999999?text=Garmin+Logo'; this.onerror=null;">
+                 <span class="text-gray-400 text-2xl">+</span>
+                  <img src="https://placehold.co/100x50/cccccc/999999?text=更多设备" alt="[更多设备 Logo]" class="h-8 md:h-10 opacity-70" onerror="this.src='https://placehold.co/100x50/cccccc/999999?text=更多设备'; this.onerror=null;">
+             </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="bg-gray-50">
         <div class="container mx-auto px-4">
              <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">练呗如何助您成功？</h2>
-                <p class="text-lg text-secondary max-w-2xl mx-auto">
-                    简单几步，开启您的智能健身体验，探索户外精彩。
+                <h2 class="section-title">简单三步，开启智能运动生活</h2>
+                <p class="section-subtitle">
+                    无论室内健身还是户外探索，练呗都能轻松上手。
                 </p>
             </div>
-            <div class="flex flex-col md:flex-row items-center justify-center gap-8 lg:gap-16">
-                <div class="text-center max-w-xs">
-                    <div class="feature-icon mx-auto">
-                        <span class="font-bold text-2xl">1</span>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">记录与规划</h3>
-                    <p class="text-secondary">
-                        轻松记录饮食运动，或开启户外活动记录，设定目标与计划。
-                    </p>
-                </div>
-                 <div class="hidden md:block text-gray-400 text-4xl">
-                    <i class="lucide lucide-arrow-right"></i>
-                 </div>
-                 <div class="md:hidden text-gray-400 text-4xl transform rotate-90 my-4">
-                     <i class="lucide lucide-arrow-down"></i>
-                 </div>
-                <div class="text-center max-w-xs">
-                    <div class="feature-icon mx-auto">
-                         <span class="font-bold text-2xl">2</span>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">智能分析</h3>
-                    <p class="text-secondary">
-                        App自动分析您的数据，评估身体与运动表现，分析路线特征。
-                    </p>
-                </div>
-                 <div class="hidden md:block text-gray-400 text-4xl">
-                    <i class="lucide lucide-arrow-right"></i>
-                 </div>
-                  <div class="md:hidden text-gray-400 text-4xl transform rotate-90 my-4">
-                     <i class="lucide lucide-arrow-down"></i>
-                 </div>
-                <div class="text-center max-w-xs">
-                    <div class="feature-icon mx-auto">
-                         <span class="font-bold text-2xl">3</span>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">获取指导与分享</h3>
-                    <p class="text-secondary">
-                        接收个性化建议，回顾报告，规划新路线，分享您的探索发现。
-                    </p>
-                </div>
-            </div>
-             <div class="mt-16 text-center">
-                 <img src="./imgs/ai建议.jpg" width="30%" alt="数据分析与建议示例" class="mx-auto rounded-lg shadow-lg border" onerror="this.src='https://placehold.co/700x400/ffffff/6b7280?text=Data+Analysis+Placeholder'; this.onerror=null;">
+            <div class="flex flex-col md:flex-row items-start justify-center gap-8 lg:gap-16">
+                <div class="text-center max-w-xs mx-auto md:mx-0"> <div class="feature-icon mx-auto"> <span class="font-bold text-2xl">1</span> </div> <h3 class="text-xl font-semibold text-gray-900 mb-2">记录 & 规划</h3> <p class="text-secondary"> 轻松记录饮食运动，或开启户外活动，设定目标与计划。 </p> </div>
+                 <div class="hidden md:block text-gray-400 text-4xl pt-10"> <i class="lucide lucide-arrow-right"></i> </div>
+                 <div class="md:hidden text-gray-400 text-4xl transform rotate-90 my-4 mx-auto"> <i class="lucide lucide-arrow-down"></i> </div>
+                <div class="text-center max-w-xs mx-auto md:mx-0"> <div class="feature-icon mx-auto"> <span class="font-bold text-2xl">2</span> </div> <h3 class="text-xl font-semibold text-gray-900 mb-2">智能分析</h3> <p class="text-secondary"> App自动分析数据，评估身体与运动表现，洞察路线特征。 </p> </div>
+                 <div class="hidden md:block text-gray-400 text-4xl pt-10"> <i class="lucide lucide-arrow-right"></i> </div>
+                  <div class="md:hidden text-gray-400 text-4xl transform rotate-90 my-4 mx-auto"> <i class="lucide lucide-arrow-down"></i> </div>
+                <div class="text-center max-w-xs mx-auto md:mx-0"> <div class="feature-icon mx-auto"> <span class="font-bold text-2xl">3</span> </div> <h3 class="text-xl font-semibold text-gray-900 mb-2">指导 & 分享</h3> <p class="text-secondary"> 获取个性化建议，回顾报告，规划新路线，分享探索发现。 </p> </div>
             </div>
         </div>
     </section>
 
-    <section id="download" class="py-16 lg:py-24 bg-gradient-primary text-white">
+    <section id="faq" class="bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+             <div class="text-center mb-12">
+                <h2 class="section-title">常见问题解答</h2>
+                <p class="section-subtitle">
+                    还有疑问？看看这里有没有您想知道的。
+                </p>
+            </div>
+            <div class="space-y-6">
+                <div> <h4 class="font-semibold text-lg text-gray-900 mb-2">练呗App是免费的吗？</h4> <p class="text-secondary"> 练呗App提供免费的基础功能，包括饮食记录、训练记录、GPS轨迹记录等。部分高级功能，如深度AI分析、高级路线规划、去广告等，可能需要订阅解锁。具体请查看App内说明。 </p> </div>
+                 <div> <h4 class="font-semibold text-lg text-gray-900 mb-2">我的运动数据安全吗？</h4> <p class="text-secondary"> 我们非常重视用户数据的隐私和安全。您的数据会被加密存储，并严格遵守相关隐私政策。您可以随时在设置中管理您的数据权限。 </p> </div>
+                 <div> <h4 class="font-semibold text-lg text-gray-900 mb-2">支持哪些类型的户外活动记录？</h4> <p class="text-secondary"> 目前主要支持徒步、跑步、越野跑、骑行（公路、山地）、登山等活动类型，我们会持续增加更多活动类型的支持。 </p> </div>
+                 <div class="text-center pt-6"> <a href="#" class="text-primary hover:underline">查看更多问题...</a> </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download-final" class="bg-gradient-primary text-white">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">准备好开始改变了吗？</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">准备好开启您的智能运动生活了吗？</h2>
             <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                立即下载练呗App，让科技赋能您的健康生活与户外探索！
+                立即下载练呗App，无论是健身房挥洒汗水，还是山野间自由探索，我们都与您同行！
             </p>
+        
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <a href="#" class="inline-block bg-white text-gray-800 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-150 w-full sm:w-auto">
                     <!-- <img src="./imgs/appstore.svg" alt="[从 App Store 下载]" class="inline-block h-8 mr-2" >
@@ -407,24 +453,119 @@
     </footer>
 
     <script>
+        // Mobile Menu Toggle
         const menuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-        const desktopMenu = document.getElementById('desktop-menu'); // Needed if we hide/show based on resize
-
         if (menuButton && mobileMenu) {
             menuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
             });
         }
-
-        // Optional: Close mobile menu if window is resized to desktop width
         window.addEventListener('resize', () => {
-          if (window.innerWidth >= 768) { // Tailwind's md breakpoint
+          if (window.innerWidth >= 768) {
             if (!mobileMenu.classList.contains('hidden')) {
               mobileMenu.classList.add('hidden');
             }
           }
         });
+
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                try {
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        if (!mobileMenu.classList.contains('hidden')) {
+                             mobileMenu.classList.add('hidden');
+                        }
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                } catch (error) {
+                    console.error("Error finding element for smooth scroll:", error);
+                }
+            });
+        });
+
+        // Testimonial Slider Logic
+        const slider = document.getElementById('testimonialSlider');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+
+        if (slider && prevButton && nextButton) {
+            const slides = slider.children; // Get all testimonial cards
+            const totalSlides = slides.length;
+            let currentIndex = 0;
+
+            function updateButtons() {
+                prevButton.disabled = currentIndex === 0;
+                nextButton.disabled = currentIndex === totalSlides - 1;
+            }
+
+            function goToSlide(index) {
+                if (index < 0 || index >= totalSlides) return;
+                const scrollAmount = slider.offsetWidth * index; // Calculate scroll distance
+                slider.scrollTo({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+                currentIndex = index;
+                updateButtons();
+            }
+
+            prevButton.addEventListener('click', () => {
+                goToSlide(currentIndex - 1);
+            });
+
+            nextButton.addEventListener('click', () => {
+                goToSlide(currentIndex + 1);
+            });
+
+            // Initialize button states
+            updateButtons();
+
+             // Optional: Add basic touch/swipe support detection (very basic)
+             let touchStartX = 0;
+             let touchEndX = 0;
+
+             slider.addEventListener('touchstart', (e) => {
+                 touchStartX = e.changedTouches[0].screenX;
+             }, { passive: true }); // Use passive listener for better scroll performance
+
+             slider.addEventListener('touchend', (e) => {
+                 touchEndX = e.changedTouches[0].screenX;
+                 handleSwipe();
+             });
+
+             function handleSwipe() {
+                 const threshold = 50; // Minimum swipe distance
+                 if (touchEndX < touchStartX - threshold) {
+                     // Swiped left
+                     goToSlide(currentIndex + 1);
+                 } else if (touchEndX > touchStartX + threshold) {
+                     // Swiped right
+                     goToSlide(currentIndex - 1);
+                 }
+                 // Reset values
+                 touchStartX = 0;
+                 touchEndX = 0;
+             }
+
+            // Update slider on resize to recalculate scroll position if needed
+             // (More robust solution might involve recalculating slide widths)
+             let resizeTimeout;
+             window.addEventListener('resize', () => {
+                 clearTimeout(resizeTimeout);
+                 resizeTimeout = setTimeout(() => {
+                     goToSlide(currentIndex); // Re-scroll to current slide based on new width
+                 }, 250);
+             });
+
+        } else {
+            console.error("Testimonial slider elements not found.");
+        }
+
     </script>
 
 </body>
