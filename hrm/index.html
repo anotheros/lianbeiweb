@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" href="./imgs/icon.png" type="image/x-icon">
+ 
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多人心率监测 - 和朋友一起“心”动，运动更有趣！</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        /* Custom styles can be added here if necessary, but prefer Tailwind classes */
+        body {
+            font-family: 'Inter', sans-serif; /* A common, clean sans-serif font */
+        }
+        /* Updated hero background to a light gray for a fresh look */
+        .hero-bg {
+            background-color: #F3F4F6; /* Tailwind gray-100, a light and fresh background */
+        }
+        .feature-icon {
+            width: 3rem; /* 48px */
+            height: 3rem; /* 48px */
+        }
+        .integration-icon {
+            width: 4rem; /* 64px */
+            height: 4rem; /* 64px */
+        }
+        .testimonial-avatar {
+            width: 4rem; /* 64px */
+            height: 4rem; /* 64px */
+        }
+        /* Define a new primary color (Teal) for a fresh theme */
+        :root {
+            --primary-color: #14B8A6; /* Tailwind teal-500 */
+            --primary-color-dark: #0D9488; /* Tailwind teal-600 */
+            --primary-color-light-bg: #F0FDFA; /* Tailwind teal-50, for very light backgrounds if needed */
+        }
+        .bg-primary { background-color: var(--primary-color); }
+        .text-primary { color: var(--primary-color); }
+        .border-primary { border-color: var(--primary-color); }
+        .hover\:bg-primary-dark:hover { background-color: var(--primary-color-dark); }
+        .hover\:bg-primary-light-bg:hover { background-color: var(--primary-color-light-bg); }
+
+
+        /* Smooth scroll for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary">多人心率监测</a>
+            <div>
+                <a href="#features" class="text-gray-600 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">核心功能</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">用户评价</a>
+                <a href="#pricing" class="text-gray-600 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">付费下载</a>
+                <a href="#cta" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark text-sm font-medium ml-2">立即获取</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-bg py-12 md:py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+                多人心率监测
+            </h1>
+            <h2 class="text-2xl md:text-4xl font-semibold text-primary mb-6">
+                和朋友一起“心”动，运动更有趣！
+            </h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-6">
+                实时追踪您和伙伴们的心率，支持Apple Watch、心率带及多种智能手表。灵动岛、小组件让数据常伴左右。开启团队运动新体验！
+            </p>
+            <p class="text-md text-gray-600 max-w-2xl mx-auto mb-8">
+                <ion-icon name="shield-checkmark-outline" class="inline-block align-middle text-green-600 text-xl mr-1"></ion-icon>我们重视您的隐私：所有数据本地存储，无需联网，不收集任何个人信息。
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#cta" class="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-primary-dark transition duration-300">
+                    立即获取App
+                </a>
+                <a href="#features" class="bg-transparent border-2 border-primary text-primary px-8 py-3 rounded-lg text-lg font-semibold hover:bg-primary-light-bg transition duration-300">
+                    了解更多
+                </a>
+            </div>
+            <div class="mt-12">
+                <img src="./imgs/multiHR.jpg" alt="App 多人运动界面截图" class="mx-auto rounded-lg shadow-xl">
+            </div>
+        </div>
+    </header>
+
+    <section id="what-you-get" class="py-16 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">你将获得什么？</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex justify-center mb-4">
+                        <ion-icon name="people-outline" class="text-5xl text-primary"></ion-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">与友同乐 实时PK</h3>
+                    <p class="text-gray-600">连接多设备，与朋友家人同屏监测心率，让运动充满竞技和乐趣。</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex justify-center mb-4">
+                        <ion-icon name="analytics-outline" class="text-5xl text-primary"></ion-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">全面数据 科学分析</h3>
+                    <p class="text-gray-600">详细记录心率曲线、区间时长，助您科学训练，见证进步。</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex justify-center mb-4">
+                        <ion-icon name="hardware-chip-outline" class="text-5xl text-primary"></ion-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">多设备兼容 无缝连接</h3>
+                    <p class="text-gray-600">支持Apple Watch、心率带及主流智能手表，选择更自由。</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex justify-center mb-4">
+                        <ion-icon name="lock-closed-outline" class="text-5xl text-primary"></ion-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">专注隐私 安全离线</h3>
+                    <p class="text-gray-600">您的数据，您做主。所有信息本地存储，无需联网，不上传任何个人数据。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="for-who" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">专为这样的你设计</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-slate-50 p-6 rounded-lg shadow-md text-center">
+                    <ion-icon name="barbell-outline" class="text-4xl text-primary mx-auto mb-3"></ion-icon>
+                    <h3 class="text-lg font-semibold text-gray-800">健身爱好者</h3>
+                    <p class="text-sm text-gray-600">追求科学训练，优化运动效果。</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg shadow-md text-center">
+                    <ion-icon name="people-circle-outline" class="text-4xl text-primary mx-auto mb-3"></ion-icon>
+                    <h3 class="text-lg font-semibold text-gray-800">运动团队/社群</h3>
+                    <p class="text-sm text-gray-600">组织团练，增加互动与竞技性。</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg shadow-md text-center">
+                    <ion-icon name="home-outline" class="text-4xl text-primary mx-auto mb-3"></ion-icon>
+                    <h3 class="text-lg font-semibold text-gray-800">家庭用户</h3>
+                    <p class="text-sm text-gray-600">与家人一起运动，共享健康生活。</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg shadow-md text-center">
+                    <ion-icon name="shield-checkmark-outline" class="text-4xl text-primary mx-auto mb-3"></ion-icon>
+                    <h3 class="text-lg font-semibold text-gray-800">注重隐私的用户</h3>
+                    <p class="text-sm text-gray-600">关心数据安全，不希望信息被收集。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-16 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">你会爱上的核心功能</h2>
+            
+            <div class="flex flex-col md:flex-row items-center mb-12 bg-white p-8 rounded-lg shadow-lg">
+                <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                    <img src="./imgs/multiHR.png" alt="多人心率PK" class="rounded-lg shadow-md w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <div class="flex items-center mb-3">
+                        <ion-icon name="people-outline" class="text-3xl text-primary mr-3"></ion-icon>
+                        <h3 class="text-2xl font-semibold text-gray-900">多人在线，心率大PK！</h3>
+                    </div>
+                    <p class="text-gray-600">邀请朋友加入，或连接多个心率设备。所有人的实时心率曲线和数值将在同一个屏幕上清晰展示！让团队有氧、家庭健身更有看点！</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row-reverse items-center mb-12 bg-white p-8 rounded-lg shadow-lg">
+                <div class="md:w-1/2 mb-6 md:mb-0 md:pl-8">
+                     <img src="./imgs/DynamicIsland.jpg" alt="灵动岛与小组件" class="rounded-lg shadow-md w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <div class="flex items-center mb-3">
+                        <ion-icon name="notifications-outline" class="text-3xl text-primary mr-3"></ion-icon>
+                        <h3 class="text-2xl font-semibold text-gray-900">灵动岛 & 小组件，心率常伴</h3>
+                    </div>
+                    <p class="text-gray-600">无需解锁手机！实时心率在iPhone灵动岛、锁屏或桌面小组件上酷炫显示。抬手即看，时刻掌握运动状态。</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center mb-12 bg-white p-8 rounded-lg shadow-lg">
+                <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                    <img src="./imgs/push.jpg" alt="心率广播" class="rounded-lg shadow-md w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <div class="flex items-center mb-3">
+                        <ion-icon name="wifi-outline" class="text-3xl text-primary mr-3"></ion-icon>
+                        <h3 class="text-2xl font-semibold text-gray-900">心率数据自由广播</h3>
+                    </div>
+                    <p class="text-gray-600">将您的心率数据分享给其他兼容的健身App、智能健身车或跑步机等设备，让数据在不同平台间无缝流转。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">听听用户怎么说</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-slate-50 p-6 rounded-lg shadow-lg flex flex-col">
+                    <img src="https://placehold.co/64x64/cccccc/FFFFFF?text=头像1" alt="用户头像" class="testimonial-avatar rounded-full mx-auto mb-4 border-2 border-primary">
+                    <p class="text-gray-600 italic mb-4 flex-grow">“跟朋友一起用这个App骑单车太好玩了！实时看到大家的心率，互相激励，感觉运动效果都变好了！”</p>
+                    <p class="font-semibold text-gray-800 text-center mt-auto">- 运动达人小明</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg shadow-lg flex flex-col">
+                    <img src="https://placehold.co/64x64/cccccc/FFFFFF?text=头像2" alt="用户头像" class="testimonial-avatar rounded-full mx-auto mb-4 border-2 border-primary">
+                    <p class="text-gray-600 italic mb-4 flex-grow">“灵动岛和小组件功能太赞了！跑步的时候不用一直看手表或者开App，心率数据一目了然，超方便！”</p>
+                    <p class="font-semibold text-gray-800 text-center mt-auto">- 科技爱好者丽丽</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg shadow-lg flex flex-col">
+                    <img src="https://placehold.co/64x64/cccccc/FFFFFF?text=头像3" alt="用户头像" class="testimonial-avatar rounded-full mx-auto mb-4 border-2 border-primary">
+                    <p class="text-gray-600 italic mb-4 flex-grow">“能连我的华为手表，也能连我老公的佳明，还能一起看数据，家庭健身的氛围感一下就上来了！”</p>
+                    <p class="font-semibold text-gray-800 text-center mt-auto">- 健康家庭主妇王女士</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg shadow-lg flex flex-col">
+                    <img src="https://placehold.co/64x64/cccccc/FFFFFF?text=头像4" alt="用户头像" class="testimonial-avatar rounded-full mx-auto mb-4 border-2 border-primary">
+                    <p class="text-gray-600 italic mb-4 flex-grow">“最让我放心的是它不联网也不收集我的信息。现在很多App都要各种权限，这款就很好，纯粹的工具，保护隐私。”</p>
+                    <p class="font-semibold text-gray-800 text-center mt-auto">- 隐私关注者张先生</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="integrations" class="py-16 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">广泛兼容，无缝集成</h2>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+                <div class="flex flex-col items-center">
+                    <img src="Watch" alt="Apple Watch" class="integration-icon rounded-lg bg-gray-200 p-2">
+                    <p class="mt-2 text-gray-700 font-medium">Apple Watch</p>
+                </div>
+                <div class="flex flex-col items-center">
+                     <img src="蓝牙" alt="蓝牙心率带" class="integration-icon rounded-lg bg-gray-200 p-2">
+                    <p class="mt-2 text-gray-700 font-medium">蓝牙心率带</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="华为" alt="华为手表" class="integration-icon rounded-lg bg-gray-200 p-2">
+                    <p class="mt-2 text-gray-700 font-medium">华为手表</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="佳明" alt="佳明手表" class="integration-icon rounded-lg bg-gray-200 p-2">
+                    <p class="mt-2 text-gray-700 font-medium">佳明手表</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="其他" alt="其他设备" class="integration-icon rounded-lg bg-gray-200 p-2">
+                    <p class="mt-2 text-gray-700 font-medium">更多设备</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-2">准备好提升你的运动体验了吗？</h2>
+            <p class="text-xl text-center text-gray-600 mb-12">一次付费，解锁全部强大功能！</p>
+            <div class="flex justify-center"> 
+                <div class="w-full md:w-2/3 lg:w-1/2 bg-primary text-white p-8 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold text-center mb-2">多人心率监测 - 完整版</h3>
+                    <p class="text-4xl font-bold text-center mb-4">¥XX.XX <span class="text-lg font-normal"> (一次性购买)</span></p>
+                    <p class="text-teal-100 text-center mb-6">解锁全部核心功能，与友同乐！</p>
+                     <ul class="space-y-2 mb-8 text-lg">
+                        <li class="flex items-center"><ion-icon name="checkmark-circle-outline" class="text-green-300 mr-2 text-xl"></ion-icon> <strong>多人实时心率PK</strong></li>
+                        <li class="flex items-center"><ion-icon name="checkmark-circle-outline" class="text-green-300 mr-2 text-xl"></ion-icon> <strong>灵动岛 & 锁屏/桌面小组件</strong></li>
+                        <li class="flex items-center"><ion-icon name="checkmark-circle-outline" class="text-green-300 mr-2 text-xl"></ion-icon> <strong>心率数据广播</strong></li>
+                        <li class="flex items-center"><ion-icon name="checkmark-circle-outline" class="text-green-300 mr-2 text-xl"></ion-icon> 单人实时心率监测</li>
+                        <li class="flex items-center"><ion-icon name="checkmark-circle-outline" class="text-green-300 mr-2 text-xl"></ion-icon> Apple Watch 深度支持</li>
+                        <li class="flex items-center"><ion-icon name="checkmark-circle-outline" class="text-green-300 mr-2 text-xl"></ion-icon> 无限历史记录与高级分析</li>
+                        <li class="flex items-center"><ion-icon name="checkmark-circle-outline" class="text-green-300 mr-2 text-xl"></ion-icon> 广泛设备兼容</li>
+                        <li class="flex items-center"><ion-icon name="shield-checkmark-outline" class="text-green-300 mr-2 text-xl"></ion-icon> <strong>专注隐私：不联网、不收集信息</strong></li>
+                    </ul>
+                    <a href="#cta" class="block w-full bg-white text-primary text-center py-3 rounded-lg font-semibold hover:bg-teal-50 transition duration-300 text-lg">
+                        前往 App Store 下载
+                    </a>
+                    
+                </div>
+            </div>
+            <p class="text-center text-sm text-gray-500 mt-8">
+                *具体价格请以 App Store 显示为准。
+                <br class="sm:hidden"> <ion-icon name="lock-closed-outline" class="inline-block align-middle text-gray-500 text-md mr-1"></ion-icon>您的数据安全存储在本地设备上。
+            </p>
+        </div>
+    </section>
+
+    <section id="cta" class="py-16 hero-bg">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">准备好与朋友一起“心”动了吗？</h2>
+            <p class="text-lg text-gray-700 max-w-xl mx-auto mb-8">
+                立即前往 App Store 下载【多人心率监测】，开启您的智能运动新体验！支持iOS和Apple Watch。
+                <br><strong>我们承诺不收集您的任何个人信息，所有数据仅存储在您的设备本地。</strong>
+            </p>
+            <div class="flex justify-center space-x-4 mb-8">
+                <a href="" target="_blank" rel="noopener noreferrer" class="inline-block">
+                    <img src="./imgs/appstore.svg" alt="App Store" class="w-32 h-auto">
+                </a>
+                </div>
+             <p class="text-sm text-gray-600">兼容iOS 15+ 和 watchOS 8+</p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-4">
+                <a href="#" class="px-3 hover:text-white">关于我们</a>
+                <a href="./privacy.html" class="px-3 hover:text-white">隐私政策</a>
+                <a href="#" class="px-3 hover:text-white">服务条款</a>
+                <a href="#" class="px-3 hover:text-white">联系我们</a>
+            </div>
+            <div class="mt-4 space-x-4">
+                本站备案号：<a href="https://beian.miit.gov.cn/"  class="hover:text-white transition duration-150" target="_blank">京ICP备2023029905号-4</a>
+                <a  href="https://beian.miit.gov.cn/"  class="hover:text-white transition duration-150" target="_blank"><!--v-if--><span >增值电信业务经营许可证编号：京B2-20240481</span><!--v-if--></a>
+            </div>
+            <p class="mb-2">&copy; 2024-2025 多人心率监测. 版权所有.</p>
+            <p class="text-sm text-gray-400 mb-2">由 北京负熵科技有限公司. 倾情打造</p>
+            <p class="text-xs text-gray-500">
+                <ion-icon name="shield-half-outline" class="inline-block align-middle"></ion-icon> 注重用户隐私，所有数据均在本地处理，App无需联网即可使用。
+            </p>
+        </div>
+        
+    </footer>
+
+   
+
+    <script>
+        // Log to confirm script loading
+        console.log("多人心率监测 宣传页面加载完毕!");
+
+        // Optional: Smooth scroll for navigation links (alternative to CSS html { scroll-behavior: smooth; })
+        // This is commented out as CSS handles it, but kept for reference if needed.
+        // document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+        //     anchor.addEventListener('click', function (e) {
+        //         e.preventDefault();
+        //         const targetId = this.getAttribute('href');
+        //         const targetElement = document.querySelector(targetId);
+        //         if (targetElement) {
+        //             targetElement.scrollIntoView({
+        //                 behavior: 'smooth'
+        //             });
+        //         }
+        //     });
+        // });
+    </script>
+
+</body>
+</html>
