@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.jianshenji.lian",
+      "sha256_cert_fingerprints": [
+        "4A:27:D4:F6:57:03:95:10:35:E5:00:1C:EA:D6:EE:48:DA:EB:41:57:47:D6:95:3F:87:1C:D3:99:49:43:3D:48"
+      ]
+    }
+  }
+]
