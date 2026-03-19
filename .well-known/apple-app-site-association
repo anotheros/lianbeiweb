@@ -1,4 +1,11 @@
 {
+   "applinks": {
+      "details": [
+           {
+             "appIDs": [ "YS4744S6M6.com.jianshenji.lian" ]
+           }
+       ]
+   },
    "webcredentials": {
       "apps": [ "YS4744S6M6.com.jianshenji.lian" ]
    }
